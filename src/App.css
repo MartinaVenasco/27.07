@@ -1,0 +1,33 @@
+.App {
+  color: rgb(24, 24, 24);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(253, 152, 0);
+background: linear-gradient(180deg, rgb(181, 202, 225) 0%, rgba(61,51,124,1) 100%);
+}
+.main__Content {display: flex;
+flex-direction: row;
+justify-content: center;
+gap:200px;}
+.App__friends, .App_messages {
+  color: #4D67AA;
+  padding: 20px;
+  width: 400px;
+margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.App__friends {width: 300px;}
+
+
+@media (max-width: 767px) {
+  .App {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
