@@ -4,15 +4,21 @@ import AddFriend from './components/AddFriend';
 import FriendCardList from './components/FriendCardList';
 import MessageCardList from './components/MessageCardList';
 import NavBar from'./components/Navbar'
+
 import './App.css';
 
 function App() {
   const [isRenderedList, setRenderedList] = useState(false);
   const [friendList, setFriendList] = useState(false);
+  const [filteredList, setFilteredList] = useState();
   return (
     <div className="App">
-    <NavBar/>
+    <NavBar />
+    <input className='filterInput' placeholder='cerca messaggi di...'  onChange={(event) => {setFilteredList(event.target.value) }}>
+              
+            </input>
     <div className='main__Content'>
+    
       <div className="App__friends">
         <h3>Lista degli amici</h3> <AddFriend   friendList= {friendList} onAddFriend = {setFriendList} />
         <FriendCardList friendList={ friendList } setFriendList={setFriendList}/>
@@ -21,7 +27,7 @@ function App() {
       <h3>Messaggi</h3>
         <AddMessage isRenderedList={ isRenderedList } onAddButton={ setRenderedList }/>
        
-        <MessageCardList isRenderedList={ isRenderedList } setRenderedList={setRenderedList}/>
+        <MessageCardList isRenderedList={ isRenderedList } setRenderedList={setRenderedList} filteredList={filteredList}/>
 
       </div></div>
     </div>

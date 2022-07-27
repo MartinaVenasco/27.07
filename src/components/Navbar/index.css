@@ -26,3 +26,20 @@
   }
   .logo {width: 350px;
 margin-right: 50px;}
+.filterInput {height: 20px;
+margin-top: 10px;
+background-color: rgb(184, 201, 228);
+border-color: white;
+border-radius: 30px;
+color:white;
+width: 300px;
+align-self: flex-end;
+margin-right: 200px;
+margin-top: 30px;}
+.filterInput::placeholder {color:white;
+padding-left:10px;}
+input:focus {outline: none;
+	border-color: white;
+	background-color: rgba(244, 231, 173, 0.453);
+  }
+.Button__clear--filter {width: 50px;}

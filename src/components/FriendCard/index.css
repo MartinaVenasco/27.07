@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
-  color: rgb(31, 32, 57);
+  color: rgb(32, 97, 111);
   cursor: pointer;
   transition: all .35s;
   border-radius: 8px;
-  background-color: ghostwhite;
+  background-color: rgba(248, 248, 255, 0.395);
 }
 
 .FriendCard:hover {

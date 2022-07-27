@@ -3,7 +3,7 @@ import { DELETE } from '../../utils/api';
 import Modal from '../Modal';
 import './index.css';
 
-const MessageCard = ({textContent, isRenderedList, onDeleteBtn}) => {
+const MessageCard = ({textContent, isRenderedList, onDeleteBtn }) => {
   const [isModalVisibile, setModalVisibility] = useState(false);
 
   const onModalConfirm = () => {
